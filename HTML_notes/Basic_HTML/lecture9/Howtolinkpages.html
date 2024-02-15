@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!--
+     How to link two HTML pages
+     ==========================
+    1. Normally a web app is composed of multiple pages where each page contains different information
+       like: home page,contact page,login page etc.
+    2. Now for the customer or web site visitor it will be very difficult to remember URL of every page.
+    3. So it is the responsibility of a web developer to provide proper navigation between pages.
+    4. And to do this we use <a> tag called as ANCHOR TAG.
+
+    5. Syntax
+       =======
+        <a href="path to the source">text to show</a>   where href is a attribute
+------------------------------------------------------------------------------------------------------------------------------------------------
+    What is target attribute?
+    ========================
+    1. Target is an attribute belonging to <a> tag.
+    2. It helps the browser decide how to open the new page.
+    3. This attribute has 5 possible value , but right now we will discuss 2 of them:-
+
+        a. "_blank": This value forces the browser to open the page in a new tab.
+
+        b. "_self":This value forces the browser to open the page in current tab.This is also default value of target.
+-------------------------------------------------------------------------------------------------------------------------------------------------    
+        What is "../" ?
+        =============
+    In HTML ../ is a command used with anchor tag to instruct the server to go one folder backward from the current folder
+
+                                               root folder
+                                               /       \
+                                              /         \
+                                       "index.html"      contactinfo
+                                                              \       
+                                                             "contact.html" //<a href="../index.html">text</a>
+---------------------------------------------------------------------------------------------------------------------------------------------------
+    
+        What is "/" in <a> tag?
+        =======================
+    In HTML "/" always indicates ROOT FOLDER. It means that if we want to navigate to a page which is in root folder then we can simply prefix
+    the page name with a "/".
+
+    Example:-
+            <a href="/index.html>Visit home page<a>"
+    
+
+-->
+<body>
+    <p>
+        How to link two HTML pages<br>
+        ==========================<br>
+       1. Normally a web app is composed of multiple pages where each page contains different information
+          like: home page,contact page,login page etc.<br>
+       2. Now for the customer or web site visitor it will be very difficult to remember URL of every page.<br>
+       3. So it is the responsibility of a web developer to provide proper navigation between pages.<br>
+       4. And to do this we use <a> tag called as ANCHOR TAG.<br>
+        <hr>
+    </p>
+    <a href="index.html"> back to index</a>
+    <a href="../lecture5/linkExample.html">link</a>
+    
+    
+</body>
+</html>
