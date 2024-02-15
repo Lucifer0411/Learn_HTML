@@ -1,0 +1,78 @@
+OUTLINE             Date:16/08/2023
+=======
+1. Javascript embedding
+2. Syntax of Local Embedding
+
+
+Javascript Embedding
+=====================
+1.  As we know Javascript is available in many host enviroment and the two most popular are:
+        browser and server(nodejs).
+2.  Since we are learning front-end Javascript our host enviroment is browser and within the browser Javascript
+    does need support of HTML to run.
+3.  This means that for client side Javascript or front-end Javascript or browser based Javascript we need
+    embed js code within HTML page and this can be done in two ways.
+        a)Local Embedding: Writing js code directly inside html page
+        b)External Embedding: Writing js code in a seprate .js file and then linking it with html page
+
+Syntax of Local Embedding
+===========================
+1.      when js not interact with html code
+        ------------------------------------
+    <html>
+        <head>
+            <script>
+                //js code
+            </script>
+        </head>
+
+        <body>
+            ......
+            ......
+        </body>
+    </html>
+    Example:  
+            <html>
+                    <head> 
+                          <script>
+                                alert("welcome to js");
+                        </script>
+                     </head>
+            <body>
+                <h3>Welcome to html</h3>
+            </body>
+            </html>
+        
+
+2.     when js  interact with html code
+        --------------------------------
+      <html>
+        <head>
+       
+        </head>
+
+        <body>
+            ......
+            ......
+            <script>
+                //js code
+            </script>
+        </body>
+    </html>
+    
+    Example:
+<html>
+<head>
+
+</head>
+<body>
+    <h3>Welcome to html</h3>
+    <script>
+        alert("welcome to js");
+        document.querySelector("h3").style.color="crimson";
+    </script>
+</body>
+</html>
+
+
+

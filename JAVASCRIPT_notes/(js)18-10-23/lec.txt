@@ -1,0 +1,20 @@
+OUTLINE         Date:-18/10/2023
+========
+1. DOM Introduction (Document Object Model)
+
+
+selecting elements using dot:
+------------------------------
+//change background color:
+    document.body.bgColor="lightblue";
+//change image:
+    document.images[0].src="../../media/bakery.jpg";
+//change second link:
+    document.links[1].href="http://www.flipkart.com";
+
+
+Selecting Using css selectors
+------------------------------
+
+
+

@@ -1,0 +1,42 @@
+OUTLINE                 Date:04/09/2023
+=======
+
+"==" this is loosely comparision: it compars only value of variables
+"===" strict comparision: it campares value and data type of the variables
+
+let a=10;
+let b="10.0";
+let c=10;
+document.write((a==b)+"<br>");//true
+0document.write((a==c)+"<br>");//true
+document.write((a===b)+"<br>");//false
+document.write((a===c)+"<br>");//true
+
+In java we have three conditional operators
+1. if
+        a)Single line if
+        b)if-else
+        c)if-else if-else
+        d)nested if
+2. switch 
+
+3. Tartery operators
+
+program to check even or odd
+============================
+
+    let a=prompt("Enter a number");
+    if(isNaN(a)){
+        document.write("Given input is not a number");
+    }else{
+        if(a%2===0){
+            document.write("Number is even");
+        }else{
+            document.write("Number is odd");
+        }
+    }
+
+
+
+
+

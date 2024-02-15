@@ -1,0 +1,7 @@
+OUTLINE                 Date:25/08/2023
+========
+
+Date type in Javascript
+Non-primitive data types
+    a)object
+    b)Array

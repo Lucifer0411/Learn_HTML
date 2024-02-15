@@ -1,0 +1,11 @@
+OUTLINE             Date:23/08/2023             one class left
+=======
+
+--Console is a redefine object in Javascript
+--Javascript is a oops based programming language
+
+Declaring variables in Javascript
+FirstName   //pascal notaion        C#
+first_name  //snake notation        c++,python
+firstName   //camelcase notaion     Javascript, java
+
