@@ -1,0 +1,53 @@
+Using Semantic Tags in table
+============================
+
+HTML5 has introduced many tags whose names are very meaningful.These tags are called SEMANTIC TAGS and they are mainly
+used by search engines or screen readers to better understand the context of the page.
+
+Although there are many new semantic tags given by HTML5 but for table we have 3 semantic tags:
+    <thead>: Wraps the heading of the table.
+    <tbody>: Wraps the main body of the table.
+    <tfoot>: Wraps the table foot.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Adding caption to the table
+===========================
+
+HTML allows us to set caption in the table.A caption is text which we need to add as heading of the table.
+
+  <caption>
+        Recommended learning technology
+    </caption>
+
+Bydefault caption appears at the center but we can change it by setting its alignment.
+----------------------------------------------------------------------------------------------------------------------------------------------------
++===============+
+|Using form tags|
++===============+
+
+The form tag in HTML is mainly used by developers to built interactive pages that is pages which can capture user input and send it to 
+the server for processing
+spcial Note:-
+-------------
+    <form> itself has no UI as the UI is generated via INPUT CONTROLS.However the <form> tag is responsible for sending the user
+    data/inputs to the server.
+Syntax
+------
+    <form action=" " method=" ">
+        //input controls
+    </form>
+
+Attribute of form
+=================
+action: This attribute contains the name of the server side page(code/program) that will receive the form data.
+method: This attribute informs the browser how the data needs to send to the server.Possible value for this attribute are: "GET" and "POST".
+
+GET: If "GET" has been set as the value of method attribute then the form data gets displayed in the browser's address bar.
+We generally use this in SEARCH PAGES.
+
+POST: If the data to be sent to the server is sensitive like login page or funds transfer page for a bank website, then we would never want to show
+the user input in address bar.Rather we would like to pass the wrapped in REQUEST BODY.This is done using "POST".
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+What are input controls?
+========================

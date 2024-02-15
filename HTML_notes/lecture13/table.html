@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        Displaying table in HTML
+        =========================
+    Tables in HTML are used to display tabular data that is data in the form of rows and columns.
+
+    To create table in HTML we make use of four important tags.
+
+    1. table: use as container tag.
+    2. tr: used for setting rows.
+    3. td: used for generating columns.
+    4. th: used for generating heading.
+        syntax:-
+        <table>
+            <tr>
+                <th>some data</th>
+                <th>some data</th>
+            </tr>
+            <tr>
+                <td>some data</td>
+                <td>some data</td>
+            </tr>
+        </table>
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+        Table attribute
+        ===============
+
+    Add borders 
+    ===========
+    To add borders in the table we use border attribute.
+
+    cellspacing
+    ===========
+    Use to increase spacing around table cell.
+
+    cellpadding
+    ===========
+    Maintance the gap between the text and the border.The value used is minimun.
+
+    align
+    =====
+    Aligns the table to right,left or center.Default is left.
+    
+    width/height
+    ============
+    By default table uses width and height according to content but we can change it using width and height attributes.
+    The below html code is informing the browser to stretch the table upto 100% width of the page.
+             <table border="2"  width="100%" >
+
+    The below html code is informing the browser to set the table height upto 75% of page height.
+            <table border="2" height="75%">
+    * If we use DOCTYPE element then the height of the page is equal to the height of the content and so the above code will not work.
+       To control this we use CSS.
+
+    bgcolor
+    =======
+    Sets the background color of the table
+                <table border="2"  bgcolor="gray">
+        
+    background
+    ==========
+    Sets the background image on the table
+
+    bordercolor
+    ===========
+    Sets the border color of the table.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+            Attributes of tr and td
+            ========================
+    bgcolor
+    =======
+    Sets the color of particular row or column.
+
+    align/valign
+    ===========
+    Set the horizontal and vertical alignment of row and column data.
+    Possible value for align are :- left , center or right.Default is left.
+    Possible value for valign are :- top , middle or bottom.Default is middle.
+
+        Drawing irregular tables.
+        =========================
+    Many times we have to strech a single table cell to muliple columns and this is done using 
+    (Horizontal streching) colspan and (Row streching) rowspan.
+
+
+
+
+
+    
+    -->
+    <h1>Table example</h1>
+    <table border="2" cellspacing="10" cellpadding="30" align="center" width="100%" height="75%" bgcolor="gray" bordercolor="red">
+        <tr>
+            <th>HTML</th><br>
+            <th>HTML</th><br>
+            <th>HTML</th><br>
+            
+        </tr>
+        <tr>
+            <td>html data</td>
+            <td>html data</td>
+            <td>html data</td>
+        </tr>
+        <tr>
+            <td>html2 data</td>
+            <td>html2 data</td>
+            <td>html2 data</td>
+        </tr>
+    </table>
+    <h1>Table example</h1>
+    <table border="2" cellspacing="10" cellpadding="30" align="center" width="100%" heigth="40">
+        <tr bgcolor="blue">
+            <th>HTML</th><br>
+            <th bgcolor="red">HTML</th><br>
+            <th>HTML</th><br>
+            
+        </tr>
+        <tr bgcolor="red">
+            <td>html data</td>
+            <td bgcolor="blue">html data</td>
+            <td>html data</td>
+        </tr>
+        <tr bgcolor="blue">
+            <td>html2 data</td>
+            <td bgcolor="red">html2 data</td>
+            <td>html2 data</td>
+        </tr>
+    </table>
+    
+    
+    <h1>Table example</h1>
+    <table border="2" cellspacing="10" cellpadding="30" align="center" width="100%" height="75%" bgcolor="gray" bordercolor="red">
+        <tr>
+            <th>HTML</th><br>
+            <th>HTML</th><br>
+            <th>HTML</th><br>
+            
+        </tr>
+        <tr valign="bottom">
+            <td>html data</td>
+            <td valign="top">html data</td>
+            <td>html data</td>
+        </tr>
+        <tr>
+            <td>html2 data</td>
+            <td align="middle">html2 data</td>
+            <td>html2 data</td>
+        </tr>
+    </table>
+    <h1>Table example</h1>
+    
+    <table border="2" align="center">
+        <tr>
+            <th>Name</th>
+            <th colspan="2"> Contact NO</th>
+        </tr>
+        <tr>
+            <td> Sachin</td>
+            <td >843546846 </td>
+            <td >843546846 </td>
+        </tr>
+    </table>
+    <table border="2">
+        <tr>
+            <th>
+                name
+            </th>
+            <td>SAchin</td>
+        </tr>
+        <tr>
+            
+            <th  rowspan="2">contact</th>
+            <td>
+                dfdsfsf
+            </td>
+            <td>
+                dfdsfsf
+            </td>
+        </tr>
+        
+    </table>
+
+</body>
+</html>

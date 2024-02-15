@@ -1,0 +1,151 @@
+OUTLINE                         date=28/05/2023
+-------
+1. date.
+2. datetime-local.
+3. email.
+4. month.
+5. number.
+6. range.
+7. search.
+8. time.
+9. url.
+10. tel.
+11. week.
+12. HTML 5 attributes.
+
+Using date
+==========
+To set date we use type="date".Doing this has two effects 
+1. We get a date component with local specific date format.
+2. A calender pops up when we tap on the date control showing current date.
+    <input type="date" id="date"> 
+
+Changing the default date
+--------------------------
+To do this we need to set the value attribute but we must assign it the date in the 
+pattern "yyyy-mm-dd".
+        <input type="date" value="2005-02-01">
+
+Setting minimun and maximum dates
+---------------------------------
+HTML allows us to limit the date selection done by the user to do this we have to use 
+two attribute .However the date we assign must be of the format "yyyy-mm-dd".
+All dates which fall in the give min and max range will be selectable while others are disabled.
+
+        <input type="date" min="2020-09-01" max="2021-01-01">
+
+-------------------------------------------------------------------------------------------------------------
+Using datetime-local
+=====================
+datetime-local allows the user to select date as well as time.
+        <input type="datetime-local">
+
+Changing default date in datetime-local
+---------------------------------------
+To do this we need to set the value attribute but must assign it the date-time in the pattern
+"yyyy-mm-ddTh:mm"
+        Example:-
+        <input type="datetime-local" value="2023-05-29T15:00">
+
+-------------------------------------------------------------------------------------------------------------
+Using email
+===========
+type="email" generates and email control with automatic automation.
+
+Which getes passed in two cases
+1. If formate of email is valid.
+2. textbox is blank
+To stop submition of empty textbox we use required.
+        <input type="email" id="myemail" required>
+-------------------------------------------------------------------------------------------------------------
+Using type="month"
+==================
+type="month" produces a control which allows submition of month and year.
+        <input type="month">
+
+-------------------------------------------------------------------------------------------------------------
+Using number
+============
+1. Generates a textbox which allows the user to input only numeric values negative or positive.
+2. To set a range for the value we can use min and max attributes.
+3. Bydefault it only allows integers.However to allow floats also we set step="any".
+-------------------------------------------------------------------------------------------------------------
+Using range
+===========
+1. Generates a slider which can be dragged left and right to select a particular value
+2. The problem is that the value selected is not display.
+3. To do this we need to use Javascript
+        <input type="range" id="vol">
+
+-------------------------------------------------------------------------------------------------------------
+Using search
+============
+Generates a textbox with a cross button clicking on which erases the content of the textbox.
+        <input type="search">
+
+-------------------------------------------------------------------------------------------------------------
+Using time
+===========
+Allows the user to select hours and minutes only by displaying a time clock.
+        <input type="time" value="15:00">
+
+-------------------------------------------------------------------------------------------------------------
+Using url
+=========
+1. Generates a textbox which allows the user to input valid url.
+2. A valid url is a url which follows:-"protocol://www.anything"
+        <input type="url" required>
+
+-------------------------------------------------------------------------------------------------------------
+Using tel
+==========
+1. Generates a textbox for inputing telephone number.
+2. Provides no validation bydefault since all over the world telephone numbers can have different formats
+
+        <input type="tel" placeholder="xx-xxxx-xxxx">
+
+-------------------------------------------------------------------------------------------------------------
+Using week
+==========
+1. Geneates a textbox which allows the user to select week from the give calender.
+        <input type="week">
+
+-------------------------------------------------------------------------------------------------------------
+HTML 5 Attributes.
+==================
+Along with new controls HTML 5 provides us some new attributes also to be used with <form> tag
+and its child tags.
+
+1. placeholder
+---------------
+Displays hint text to notify the user what input is to be type.
+        <input type="text" placeholder="Ente your name">
+The color of the hint text is light gray but can be change by CSS.
+
+2. autofocus
+------------
+Sets the keyboard focus to the input control.
+        <input type="text" autofocus>
+
+3. autocomplete
+---------------
+Used with <form> tag and automatically enables autofilling means it starts displaying any previous text
+user has inputted.
+*   a. We can set autocomplete for individual elements also.
+    b. individual controls can also override the autocamplete enable by form tag
+    c. It only works when autofill setting in the browser is on.
+
+            <input type="email" autocomplete="on">
+            <input type="password" autocomplete="off">
+4. required
+------------
+It is used to avoid empty input from the user
+
+5. multiple
+-----------
+The multiple attribute allows the user input multiple value for the control however it works
+with email and file only.
+
+
+
+

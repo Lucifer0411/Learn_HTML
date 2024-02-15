@@ -1,0 +1,43 @@
+some code left                                  Date-29/05/2023
+OUTLINE :-                                      
+1. datalist
+2. adding audio on HTML
+3. adding video on HTML
+
+
+datalist example:
+==================
+<input list="bollywood" id="actor" name="favactor"/>
+<datalist id="bollywood">
+<option>Ayushman</option>
+<option>Manoj</option>
+<option>Amit</option>
+</datalist>
+--------------------------------------------------------------------------------------------------------------
+Adding audio on HTML page
+============================
+The <audio> tag provided by HTML5 allows us to imbad an audio player in our html page.
+Its important attributes are:-
+1. src:-indicates the path to the audio file we want to play.
+2. controls:- generates audio controls with audio tag.
+3. loop:-makes the audio control replay the song automatically as the song ends.
+4. preload:-this attribute allows us to decide how the song will be loaded 
+It has three possible values.
+    a. "none" -indicates the song will only be pulled from the server when play button is clicked.
+    b. "auto" -indicates that the song will be loaded even before play is clicked.
+                Gives a smooth experience to the user.
+    c. "metadata" -indicates that properties of the song like length will be loaded bydefault
+    <audio src="Pirate.mp3" controls loop preload="auto"></audio>
+
+Adding videos on HTML page
+==========================
+To add a video on HTML page we use video tag whose important attribute are:-
+1. src:- indicates the path to the video file we want to play the extention which are permited are
+        mp4 and ogg
+2. controls:- provides video related controls.
+3. width:-allows us to set the width of the video player.
+4. autoplay:-ensure that the video automatically starts playing as soon as the page loads but in some browsers
+like chrome it only works when "muted" attribute is present.
+        <video src="VID20211115150249.mp4" controls width="50%" autoplay muted></video>
+--------------------------------------------------------------------------------------------------------------
+

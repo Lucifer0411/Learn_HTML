@@ -1,0 +1,87 @@
+OUTLINE
+--------
+1. Image button
+2. select tag
+3. select attribute
+4. optgroup tag
+5. scrolling list
+-----------------------------------------------------------------------------------------------------------------
+
+Creating Image buttons
+======================
+To make a page attrative we can set an image to work like submit button.Such images are called 
+image buttons.
+To do this we just have to set type="image".Also we have to set "src" attribute.
+Also we can set width,height,alt attributes.
+    
+<input type="image" src="../LearnJavaScript/media/images/erorr2.png" border="2" width="100px" height="50px">
+
+--------------------------------------------------------------------------------------------------------------------
+Using select tag
+=================
+The select tag in HTML 4 is used to generate two types of control:-
+1. Drop Down List 
+2. Scrolling List 
+
+    <select> 
+        <option> some text</option>
+        <option> some text</option>
+        <option> some text</option>
+        .
+        .
+        .
+    </select>
+Example
+--------
+    You Language of choice:
+    <form action="">
+        <select name="Language" id="">
+            <option value="Java" >Java</option>
+            <option value="Python">Python</option>
+            <option value="C">C</option>
+            <option value="C++" checked>C++</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+
+Using selected attribute
+-------------------------
+Use to display the item intially.
+            <option value="Python" selected>Python</option>
+
+Using optgroup tag
+------------------- 
+To make our drop down list more appear more presentable to the user we can club its items under 
+logical groups or logical heading creating using a tag called optgroup tag.This tag has only one
+ attribute which is label.
+
+ <select name="Language">
+            <optgroup label="Server Side">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="C" >C</option>
+                <option value="C++">C++</option>
+            </optgroup>
+            <optgroup label="Client Side">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript">Javascript</option>
+            </optgroup>
+        </select>
+
+Creating Scrolling list
+------------------------
+To create a scrolling list we just have to add one attribute in select tag called multiple.
+
+        <select name="Language" multiple>
+
+size attribute
+---------------
+Controls number of item to appear bydefault.Its default value is 4.
+
+        <select name="Language" multiple size="3">
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+

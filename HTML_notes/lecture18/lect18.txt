@@ -1,0 +1,84 @@
+OUTLINE
+--------
+1. textarea
+2. HTML 5
+3. values of type attribute
+4. label
+5. color
+-------------------------------------------------------------------------------------------------------------
+
+Creating textarea
+=================
+A textarea is a control using which we can accept multiple lines of input from the user.
+for example: suppose we want to allow the user type his address which will be multiline input in such cases we
+can use textarea
+The general syntax of textarea is:-
+    <textarea name="...." rows="....." cols="....">
+        some text
+    </textarea>
+
+1. row and cols decide the height and width of the textarea.
+2. The default value of rows is 2 and default value of cols is 20,but not every
+browser will follow same default values so it is better to provide these attributes while 
+using textarea.
+
+     <textarea name="info" cols="30" rows="10"></textarea>
+-------------------------------------------------------------------------------------------------------------
+
+HTML 5
+=======
+1. HTML 5 is the newest version of HTML published in 2014 and its latest version HTML 5.3 released in 2017.
+2. HTML 5 has provided following new features:
+    a. New values for type attribute of <input> tag
+    b. New attributes for input tag
+    c. New tags like <audio>,<video> and <data list>
+    d. New semantic tags like <header>,<footer>,<article>,<nav> etc.
+    e. A new technology called GEOLOCATION which helps us identify physical location of user.
+    And many more...
+-------------------------------------------------------------------------------------------------------------
+
+New Values for type attribute
+=============================
+Before we can understand and use HTML 5 there is a very important tag we must understand called as 
+<label> tag
+
+The <label> tag
+-------------
+It is introduced by HTML 4 
+2. However HTML 5 strongly recommends it to be used with input Controls
+3. <label> gives 3 benefits:-
+    a. Makes our page more readable
+    b. Makes the input control selectable as the user can tap on label to shift focus on ths 
+    associated input control.
+    c. Makes it super easy for screen readers to understand our web page.
+
+Syntax of <label> tag
+----------------------
+    <label for="....">Some text </label>
+    <input type="....." id="...." ...../>
+
+    1. The value for id of <input> and for of <label> must be the same.
+    2. This helps the browser understand that which label is associated with which input control.
+    example:-
+         <form action="">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname">
+          <label for="lname">First Name</label>
+            <input type="text" id="lname">
+            <input type="submit">
+    </form>
+
+Using color attribute
+=====================
+Color is the value we can assign to type attribute bydefault it shows black color but we can change the 
+starting color usign its value attribute.
+Assigning 7 character value begining with # followed by rgb code 
+setting color as value of type attribute produces a button clicking on which generates a color palete
+         <input type="color" id="color">
+    * To apply the color user has selected on any element on the page we need to user Javascript
+
+Using date
+==========
+
+
+

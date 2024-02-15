@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- List
+         ====
+    List in HTML are one of the most important tag use for dual purpose
+    1. They are used for generating output for list form.
+    2. They are used for navbars.
+
+        Types of List
+        =============
+    HTML provides three types of lists:-
+    1. Unordered list: In which items are displayed vertically but not in any specific order.
+    2. Ordered list: In which items are displayed in a sequence.
+    3. Definition list: A list which is used to display an item and a short discription of the item.
+
+    Unordered list syntax:
+    =====================
+    <ul>
+        <li>Entry1</li>
+        <li>Entry2</li>
+        <li>Entry3</li>
+        <li>Entry4</li>
+    </ul>
+    
+    Ordered list syntax:
+    ====================
+    <ol>
+        <li>Entry1</li>
+        <li>Entry2</li>
+        <li>Entry3</li>
+    </ol>
+
+    Definition list syntax:
+    ======================
+    <dl>
+        <dt>Some text</dt>          //definition text
+        <dd>Some description</dd>   //definition description
+    </dl>
+    -->
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <h3>Courses</h3>
+    <!-- Unordered list 
+    
+        type attribute:
+        ==============
+        The type attribute in unordered list sets the marker before list item.
+        Its default value is dis,but can be change to square or circle.
+    -->
+    <ul type="circle"> 
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ul>
+     <hr>
+
+    <!-- Ordered list -->
+    <h3>Ordered courses</h3>
+    <!--
+        type attribute in ol:
+        =====================
+        type attribute controlls the ordering to be used its possible value are "1","a"/"A","i"/"I".
+
+        start attribute:
+        ===============
+        Decide from which value list will begin default value is 1.
+
+    -->
+    <ol type="i">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ol>
+    <h3>Order with start value different</h3>
+    <ol start="28" type="a">
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+    </ol>
+    <hr>
+
+    <h3>combination list</h3>
+    <ul >
+        <li>Java</li>
+        <ol>
+            <li>JSE</li>
+            <li>JEE</li>
+            <li>JME</li>
+        </ol>
+        <li>Python</li>
+        <li>.Net</li>
+        <ul type="dis">
+            <li>c#.Net</li>
+            <li>VB.Net</li>
+        </ul>
+        <li>C</li>
+    </ul>
+    <hr>
+    <h3>Definition list</h3>
+    <dl>
+        <dt>Java</dt>
+        <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus praesentium, error autem animi dolore nisi
+             esse cumque accusamus? Quo quis quibusdam numquam facilis omnis. Corrupti rem ratione quam laboriosam dignissimos.
+        </dd>
+        <dt>Python</dt>
+        <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur inventore consequuntur excepturi eos
+             quam maiores, omnis neque ullam dolores enim temporibus soluta, odit dolorum tempore corrupti expedita delectus, deleniti ipsam.
+        </dd>
+    </dl>
+    <hr>
+
+
+    
+</body>
+</html>

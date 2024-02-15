@@ -1,0 +1,44 @@
+
+What are input controls ?
+=========================
+
+Input controls in HTML are GUI elements which are used to make our HTML page interactive that is 
+if we want to allow the user to provide some inputs to our page then we need use of the input controls.
+
+Overall we have 24 input controls in HTML 4 and 5 comibned.12 in HTML 4 and another 12 in HTML 5.
+All these input controls are produced using just 3 tags and they are:
+1. <input>
+2. <textarea>
+3. <select>
+
+Some example of input controls are buttons, textboxes,password field,drop down list etc.
+
+Using Input tag
+===============
+
+The <input> tag is the most common input control generation tag and it can produce 9 types of controls
+its general syntax is:-
+    <input>
+            type="...."         //Control the type of input control to be display
+            name="...."         //Used to send data to the server as key-value pair
+            size="....."        //Controls number of visible characters
+            maxlength="...."    //Controls maximum number of input characters
+            value="......."     //Controls default value to be display in the input control
+            checked/>           //Sets the checkbox to checked state
+
+Code 1:
+  <form>
+        FirstName:<input type="text"/><br><br>
+        LastName:<input type="text"/><br>
+    </form>
+
+Code 2:
+
+        Mobile: <input type="text" maxlength="10">
+        
+
+
+
+
+
+

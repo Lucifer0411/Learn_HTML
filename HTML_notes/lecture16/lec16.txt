@@ -1,0 +1,129 @@
+Aligning form
+==============
+  <table>
+        <tr align="right">
+            <th>FirstName:</th>
+            <td>
+                <input type="text"/><br>
+            </td>
+        </tr>
+        <tr align="right">
+            <th>LastName:</th>
+            <td>
+                <input type="text"/><br>
+            </td>
+        </tr>
+        <tr align="right">
+            <th>Mobile:</th>
+            <td>
+                <input type="text" maxlength="10"/><br>
+            </td>
+        </tr>
+    </table>
+--------------------------------------------------------------------------------------------------------------------
+Creating checkboxs
+===================
+Checkboxes are toggle buttons (on/off) which are used in situation where a user can select
+more than one option.
+To create a checkbox we set type attribute equal to "checkbox"
+
+  <form action="">
+        Select the languages you know:<br><br>
+        <input type="checkbox" value="C" name="lang1"><b>C-language</b><br> <br>   
+        <input type="checkbox" value="Python" name="lang1"><b>Python</b><br><br>
+        <input type="checkbox" value="C++" name="lang1"><b>C++</b><br><br>
+        <input type="checkbox" value="JSE" name="lang1"><b>JSE</b><br><br>
+    </form>
+--------------------------------------------------------------------------------------------------------------------
+
+Using checked attribute
+=======================
+
+Checked is used to set initial selection.
+        <input type="checkbox" value="C" name="lang1" checked><b>C-language</b><br> <br>   
+--------------------------------------------------------------------------------------------------------------------
+
+Creating radio-buttons
+=======================
+Radio buttons are used in those situations where we want to allow the user to Select
+only one option amongs available options.
+To do this we need to set same for name attribute of multiple radio buttons.
+To create a radio button we set type equal to radio
+
+  <form action="">
+        <input type="radio" name="gender" value="Male"><b>Male</b><br>
+        <input type="radio" name="gender" value="Female"><b>Female</b><br>
+    </form>
+
+--------------------------------------------------------------------------------------------------------------------
+
+Creating Submit button
+======================
+It is a pre programed button which when clicked submits form data to the server.
+But while using submit button we should carefully select the value for method attribute that should be
+"GET for search pages and "POST" for login,registration,fund tranfer page.
+
+<form action="login.js" method="post">
+        Username:
+        <input type="text"><br><br>
+        Password:
+        <input type="password"><br>
+        <input type="submit" value="Login">
+    </form>
+
+--------------------------------------------------------------------------------------------------------------------
+Creating Reset button
+=====================
+A reset button is also pre programmed button which sets the HTML form controls
+to their initial state.
+To create a reset button we just have to set type attribute equal to "reset".
+
+        <input type="reset" value="Clear All">
+    
+--------------------------------------------------------------------------------------------------------------------
+Creating button
+===============
+The third type of button provided by HTML is a normal button which has no default functionality
+so we bind it with a javascript function using onclick attribute.To perform some tasks when it is clicked.
+
+    
+    <form action="">
+        <input type="button" name="btn" value="Click me for a message" onclick="greetings()">
+    </form>
+
+     <script>
+        function greetings(){
+            alert("hello user");
+        }
+    </script>
+
+--------------------------------------------------------------------------------------------------------------------
+Creating file upload buttons
+============================
+HTML allows the user to select files that he wants to send to the server.To do this we set
+type attribute="file".
+
+Special properties of file control
+-----------------------------------
+1. A file control is a preprogammed button which when clicked automatically opens
+    file open dialog box.
+2. The user can select one or more files from this dialog box.
+    If "multiple" is used more than one  file can be selected otherwise only file is allowed
+3. If we want to guide the user particular file type to be selected then we can use
+    accept attribute.
+4. Most important point is that if our form tag contains file control then it "should have" 
+    an attribute called "enctype" set to the value "multipart/form-data" this indicates that the 
+    form contains textual data plus binary files.
+
+   Browser for file to upload
+    <form enctype="multipart/form-data" action="">
+        <input type="file" name="upload-file" multiple accept=".jpg">
+        <br>
+        <input type="submit" value="Upload file">
+    </form>
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+

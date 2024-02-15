@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--    How to display image in web page?
+           ==================================
+    img tag is used by developers to display images in there web page.
+        General syntax of img is:-
+            <img src="path to the image">
+---------------------------------------------------------------------------------------------------------------------------------------------------
+    
+            Attributes of <img> tag
+            ======================
+    1. src=stores image path.
+
+    2. width and hight= represent width and hight of the image.If not mentioned browser uses original size of the image.But browser has no idea
+        about the location of the image or it does'nt reserve any space for image dimentions due to this when the image arise other elements on
+        the page might get distorted.
+
+    3. alt=(alternate text) alt indicates alternate text to be show if the image could not be display.
+
+    4. title=shows the title to be display when the mouse is hovered on the image.
+
+    How to align image.
+    ------------------
+    5. align:-
+    Althought img has align attribute but it never align the image all it does is to align the text surrounding the image.If we want
+    to align the image:-
+        1. we can use CSS.
+        2. we can use div.
+    
+        Creating clickable images.
+        =========================
+    HTML alows us to wrap img tag in <a> tag and due to this the image becomes clickable.
+    
+    7. border= HTML allows us to add border to image using border property however the exact border color depends on the browser.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+   
+
+
+-->
+    <img src="/LearnJavaScript/media/images/photo_2022-09-30_18-05-56.jpg" width="935" height="1174">
+    <img src="/LearnJavaScript/media/images/wallpaperflare.com_wallpaper (1).jpg" width="1920" height="1080" alt="wallpaperflare.com_wallpaper (1).jpg" title="attack on titan">
+    <img scr="hello.jpg" alt="hello.jpg">
+    <div align="center">
+        <img src="/LearnJavaScript/media/images/erorr2.png">
+    </div>
+
+    <h1>visit index</h1>
+    <a href="../lecture9/index.html">
+        <img src="/LearnJavaScript/media/images/erorr2.png" title="click to visit index">
+    </a>
+    <img src="/LearnJavaScript/media/images/erorr2.png" border="2">
+
+
+
+</body>
+</html>
