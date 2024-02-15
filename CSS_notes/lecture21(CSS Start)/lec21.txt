@@ -1,0 +1,94 @@
+OUTLINE: -                         Date-05/06/2023 
+-----------
+1. What is CSS
+2. Maintains CSS
+3. CSS version
+4. CSS Syntax.
+5. Type of CSS
+
+What is CSS ?
+=============
+CSS stands for cascading style sheet and it is mainly used to handle presentation of a web page
+that is we use CSS to change look and feel of a page.
+
+Why choose CSS when HTML is there ?
+======================================
+     CSS provide superior styling compare to html. 
+        for exmple :- 
+        a. using css we can set position of elements acconding to our choice.This is called layouting.
+        b. We can add many different types of backgrounds and borders using css.
+            Advantage of CSS
+            ----------------
+            1. CSS save time
+            2. Pages load faster
+            3. Easy maintenance
+            4. Superior style to HTML
+            5. Making the site Responsive.
+    
+
+Who Maintains CSS ?
+==================
+1. Css is maintained by a subsidiary of W3C called CSS Working Commity or CSS Working Group
+2. They suggest new features to be added to CSS and they are called "specifications"
+3. These specification are apporved by W3C and they become "recommendation".
+4. Finally some of these recommendations are applied by the browser and they become "implementations"
+
+CSS Version history
+====================
+1. CSS was launched in 1996 with version 1.
+2. In 1998 CSS 2 was launched.
+3. finally in the year 2005 CSS 3 was launched.
+
+CSS Syntax
+==========
+    selector{
+            property:value
+        }
+        //selector="what?"
+        //property="what?"
+        //value="How?"
+        //All this is called "Rule Set".
+
+Types of CSS
+=============
+There are 3 ways to add CSS in our page. Each one of them is good in a different situation. 
+These three ways are: - 
+    1.  Internal CSS
+    2.  External CSS
+    3.  Inline CSS
+
+Internal CSS :-
+1.  In internal CSS we add css code into the style section of <head> tag.
+        <style>
+        p{
+            color:magenta;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta est officia beatae delectus quam illo 
+         vel numquam. Iure totam, rem natus expedita tenetur ipsa accusamus autem alias dolor! Laboriosam.
+    </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

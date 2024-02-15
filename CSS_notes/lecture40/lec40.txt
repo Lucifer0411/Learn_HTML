@@ -1,0 +1,155 @@
+OUTLINE                 Date:04/08/2023
+=======
+1. The z-index property
+2. Absolute positioning
+3. position fixed
+
+The z-index property
+====================
+1.  The z-index property decide which element should be given priority if overlapping occurs.
+2.  Bydefault z-index is 0 for every elements so browser uses stack principle to resolve overlapping
+    that is the element occuring after will overlapp the element occuring before.
+    i.e. the first element will be overlap by the second , the second element will be overlap by third
+    and so on.
+4.  To change this behaviour we can set z-index of an element to a greater value.
+    Example: without div
+        css:
+            #one{
+                width:300px;
+                border:1px solid #000;
+                padding:20px;
+                background:lighgreen;
+                position:relative;
+                top:50px;
+            }
+            #two{
+                  width:300px;
+                border:1px solid #000;
+                padding:20px;
+                background:ligtpink;
+                position:relative;
+                left:30px
+            }
+        html:
+            <div id="one">
+            This is some text inside div one
+            </div>
+
+            <div id="two">
+            This is some text inside div two
+            </div>//this div will overlap the first div
+
+            Example 2 with z-index;
+        css:
+            #one{
+                width:300px;
+                border:1px solid #000;
+                padding:20px;
+                background:lighgreen;
+                position:relative;
+                z-index:1;          //z-index value one
+                top:50px;
+            }
+            #two{
+                  width:300px;
+                border:1px solid #000;
+                padding:20px;
+                background:ligtpink;
+                position:relative;
+                left:30px
+            }
+        html:
+            <div id="one">
+            This is some text inside div one
+            </div>//this div will overlap the second div because of greater value of z-index
+
+            <div id="two">
+            This is some text inside div two
+            </div>
+
+position:absolute
+==================
+1.  Absolute positioning means as a programmer we specify exect coordinates for the element.
+2.  An absolutely positioned element is taken out of the normal flow after its position has been set.
+    Example:
+        css:
+            p{
+                background:skyblue;
+            }
+            img{
+                position:absolute;
+                left:100px;
+                top:150px;
+            }
+        html:
+            <img src="/media/images/bgimg.jpg/>
+
+            <p>
+                This is paragraph
+            </p>
+        In this paragraph will start from top.
+
+Important point about absolute positioning
+-------------------------------------------
+1.  An absolute positioned element is positioned relative to the first parent element that has a position other
+    than static.
+
+2.  If no such element is found, it wil be positioned on a page relative to the top-left corner of 
+    the browser window.
+
+    html:
+            <div id="parent">
+                This is parent
+                <div class="container">
+                    This is child
+                </div>
+            </div>
+    css:
+        #main{
+            width:350px;
+            height:300px;
+            margin-top:200px;
+            border:1px solid #000;
+            background:lighblue;
+            position:relative;
+        }
+        .container{
+               width:300px;
+            border:1px solid #000;
+            background:#ccc;
+            position:absolute;
+            top:0px;
+            left:0px;
+        }
+       Due to "position:relative" this child div will be set at parent divs 0,0 otherwise it would have 
+       used browser top. 
+
+position:fixed
+===============
+fixed positioning is same as absolute but the only difference is that a fixed positioned element does not move
+from its location when tha page is scrolled.
+    Example:
+        css:
+            h1{
+                color:red;
+                position:fixed;
+                left:640px;
+                top:500px;
+            }
+position:sticky
+================
+1.  A sticky positioned element will initailly behave like a relative element but if we keep on scrolling the 
+    page the browser will make them fixed as soon as their values are matched.
+2.  In short we can say sticky is relative + fixed.
+        Example:
+            css:
+                table{
+                    text-align:center;
+                    position:sticky;
+                    top:0px;
+                }
+    
+
+        
+
+

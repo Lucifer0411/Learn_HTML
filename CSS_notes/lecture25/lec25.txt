@@ -1,0 +1,97 @@
+OUTLINE                     Date:16/06/2023
+=======
+
+1. Relative units
+2. %
+3. em
+4. rem
+
+
+Relative Units
+==============
+1.  In css, a relative unit is a unit which bydefault has no size.
+2.  That is their size is calculated with respect to some properties at runtime.
+3.  They are very important if we want to develop a responsive website.
+4.  Overall css provides 7 relative units but the most important of them are: - 
+    %, em, rem.
+5.  Others are: ch, ex, vw, vh.
+
+Percentage / %
+==============
+1.  % value are calculated on the basis of same property value inherited from parent.
+2.  For exmaple if we say :-
+                    p{
+                        font-size:20%;
+                    }
+    then it means that the paragraph font size will be 20% of the font size of parent.
+    If we assume that parent font size is 30px then paragraphs font size will be 6px.
+
+    Exmaple:    
+        css:     <style>
+        #u1{
+            font-size: 40px;
+        }
+        #u2{
+            font-size: 50%;
+        }
+    </style>
+    html: <body>
+    <ul id="u1">
+        <li>C++</li>
+        <li>java</li>
+        <ul id="u2">
+            <li>Core java</li>
+            <li>Advance java</li>
+        </ul>
+    </ul>
+</body>
+------------------------------------------------------------------------------------
+em (element)
+==============
+1.  em stands for "element"
+2.  em always calculate its value on the basis of current font size.
+3.  If the element has no font size mentioned then em takes the font size of parent or default font 
+    size of 16px.
+4.  For example:    
+            p{
+                font-size:2em;
+            }
+    The above ruleset says the paragraph font size should be 2 times of current font size.
+    Assuming that current font-size is 16px, paragraph font size will be 32px.
+
+    1em=16px by default
+
+    Example :
+       ul{
+            font-size: 1.5em;
+        }
+
+         <ul>
+        <li>C++</li>
+        <li>Java</li>
+    </ul>
+------------------------------------------------------------------------------------
+rem unit ()
+========
+1.  rem stands for "root element"
+2.  The word root does not represent the parent element rather it represents root of the page  which 
+    is html
+3.  So, 
+        p{
+            font-size:2rem;
+        }
+    The above ruleset tells the browser to set the font size for the  paragraph relative to Html tags
+    font size which by default is 16px so paragraph size will be 32px.
+
+    The most important difference between em and rem is that em always relates to parent element font size
+    while rem always relates to root elements font size which is HTML.
+    
+    Exmaple: 
+      #u3{
+            font-size: 0.5rem;
+        }
+
+          <ul id="u3">
+        <li>C++</li>
+        <li>Java</li>
+    </ul>

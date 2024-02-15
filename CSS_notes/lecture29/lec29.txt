@@ -1,0 +1,119 @@
+OUTLINE                     Date: 30/06/2023
+========
+1. font-size
+2. font-weight
+3. font-variant
+4.font awesome
+5. Customizing font awesome
+
+font-size
+=========
+1.  As the name indicates, this property allow us to set font-size.
+2.  We can set the font-size in three ways
+            a. in pixel
+            b. in em or %
+            c. using css keywords
+    Examples: 
+                 body{
+                  font-size: 36px;
+                    }
+        The above code instruct the browser to set a fix font-size of 36px of body irrespective of the device
+    
+    Examples:   
+                     body{
+                     font-size: 2em;
+                     }
+        The above code instruct the browser to set the font-size of para to double the font-size of parent element
+        Assuming that parent element's font is 16px, para will have a font-size of 32px.
+
+    Examples:
+                    h1{
+                        font-size: large;
+                     }
+        The above example is using relative font-size for <h1> by setting it to the keyword larger
+        this means that <h1> font-size will be greater than 36px which is font-size of its parent
+        <body> tag
+        Other keyword are:
+             smaller(relative)
+             xx-small: 9px
+             x-small: 10px
+             small: 13px
+             medium: default font-size 16px
+             large: 18px
+             x-large: 24px
+             xx-large: 32px
+
+font-weight
+==========
+1.  This property decides how the font will appear it can have any value from 100 to 900 with multiple of 100
+2.  It can also use keyword like
+            normal, bold, bolder, lighter
+3.  We can also inherit parent font-weight by using the keyword inherit.
+
+    Examples:
+             p.impt{
+                font-weight: bold;
+                 }
+
+    <p class="impt">font-weight example</p>
+
+font-variant
+============
+1.  This property is a new addition to css3 and it makes lower case letter convert to uppercase but 
+    their hight is still equal to lower alphabets
+2.  Possible value is small-caps
+    Examples: 
+             p.font_variant{
+                     font-variant: small-caps;
+                   }
+    <p class="font_variant">font-variant example</p>
+
+Font Awesome
+===========
+1.  Font Awesome is one of the most popular liberaries for supplying icons.
+2.  It offers more than 2k free fonts/icons and more than 19k paid font/icons.
+3.  To use font awesome we have to 2 ways
+    a. Download the font awesome kit and use it in your web page (least recommended)
+    b. Create an account on their website, login and use font awesome kit.
+
+    The second approach is recommended because it always provides us updated font liberary. Moreover
+    since we are directly connecting with font awesome we don't have to download any kit.
+
+    Examples: 
+        <script 
+            src="https://kit.fontawesome.com/ab3fcd.js"
+            crossorigin="anonymous"></script>
+        
+        <body>
+            <h1>My favourate social media site are</h1>
+            <i class="fa-brands fa-facebook-f"></i> Facebook<br/>
+            <i class="fa-brands fa-youtube"></i> Youtube<br/>
+            <i class="fa-brands fa-linkedin-in"></i> Linkedin<br/>
+        </body>
+
+Customizing font awesome icons
+================================
+1.  Font Awesome allow us to manipulate the icons provided by them this is done in two steps: 
+    a.  Create a css class having all the properties which you want to apply on the icon like 
+            color, border, font-size etc
+    b.  Assign your css class to the icon code supplied by font awesome
+    Examples: 
+        <style>
+            .fa-red{
+                font-color:red;
+            }
+            .fa-blue{
+                font-color:blue;
+            }
+        </style>
+
+        <i class="fa-brands fa-facebook-f fa-blue"></i> Facebook<br/>
+        <i class="fa-brands fa-youtube fa-red"></i> Youtube<br/>
+
+Handling text in css
+====================
+
+
+            
+        
+

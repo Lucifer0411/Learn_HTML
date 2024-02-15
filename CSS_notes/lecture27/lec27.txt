@@ -1,0 +1,56 @@
+OUTLINE                     Date: 23/06/2023
+========
+1. background-position.
+2. background-attachment.
+3. background-size.
+4. background.
+
+background-position
+--------------------
+    what is % % in background-position?
+    ------------------------------------
+    If we set the background-position as 
+    background-position:75% 25% then it does not mean the image will be shifted 75% from left
+    and 25% from top. Rather it means the 75% 25% spot (left top) on image will collide/
+    overlap/co-inside with 75% 25% spot of the container.
+    Thus, if we say background-position:50% 50% 
+    then it means that the spot at 50% left and 50% top on the image will collide with 
+    containers 50% left and 50% top in other word image will be center align in the 
+    container.
+
+background-attachment
+======================
+Bydefault a background image scrolls with the page. However to controll this scrolling and 
+set the image at a fixed position we use background-attachment:-
+    possible values are:
+        scroll (default), fixed ,inherit.
+        Example:    background-attachment:fixed;
+
+background-size
+================
+Bydefault images take the same size as their original dimention but we can change
+this behaviour by using background-size.
+Its possible values are:
+        1. auto(default)
+        2. cover/contain= straching the image.
+        3. width,height= programmer given width height.
+        4. width= width given by programmer height calculated automatically.
+cover/contain
+Cover strach the image to fill up the entire container area.
+On the other hand contain make sure that image falls inside the container, straches it
+but does not gurantee to cover full area.
+    background-size:cover;
+
+background
+==========
+All the previous properties can be set using a single property called background
+However it is not compulsary to mention value for every property because browser will take
+their default values if we skipped them.
+
+
+
+
+
+
+
+

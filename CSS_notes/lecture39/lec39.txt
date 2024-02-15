@@ -1,0 +1,103 @@
+OUTLINE                 Date:01/08/2023
+=======
+1. Making elements inline
+2 css positioning
+
+Making elements inline:
+    css:
+        p{
+            display:inline;
+            background:green;
+        }
+        ul{
+            display:inline;
+            background:cadetblue;
+        }
+        ul li{
+            display:inline;
+            margin:10px;
+        }
+    html:
+        <p>This is first paragraph</p>
+        <p>This is second paragraph</p>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    All block elements will now appear horizontally.
+
+    Example 2:
+    div p{
+        width:300px;
+        height:100px;
+        margin:20px;
+        background:lighblue;
+        display:inline-block;
+    }
+This will make <p> tag support width and height which would not have been supported if we have display:inline
+
+Css Positioning
+===============
+1.  Positioning in css means setting an element exect location on our webpage.
+2.  To apply positioning we use positioning property which has five possible values:
+        a)static
+        b)relative
+        c)absolute
+        d)fixed
+        e)sticky
+            static positioning is also called as browser defalut or normal flow
+3.  If we use position property then we also use one or more following properties:
+        a)top
+        b)right
+        c)bottom
+        d)left
+        e)z-index
+
+position:static;
+---------------- 
+1.  statically positioned elements never respect any positioning property and they appear according
+    to normal flow of the page.
+2. Moreover, it is the defalut value for position property.
+    css:
+        #one{
+            width:300px;
+            border:1px solid #000;
+            padding:20px;
+            background:lighblue;
+            position:static;
+            left:50px;
+            //all properties will show their effect but "left:50px" will be ignored by the browser
+            //because position is static
+        }
+
+position:relative;
+-------------------
+1.  A relativly positioned element is always calculated according to its current normal position.
+2.  This means that the elements box will be shifted with respect to its default position on the page.
+    css:
+    #one{
+            width:300px;
+            border:1px solid #000;
+            padding:20px;
+            background:lighblue;
+            position:relative;
+            left:50px;
+        }
+        Due to position:relative the element will now support left:50px and move away 50px from left of its
+        actual position.
+
+Imp about relative position
+----------------------------
+A relatively positioned elements moves out from its normal position but still its space is reserved by the
+browser will place no other element there.
+
+
+
+
+
+    
+
+

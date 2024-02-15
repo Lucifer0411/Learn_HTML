@@ -1,0 +1,66 @@
+OUTLINE                     Date:14/07/23
+=======
+1.  Designing table in css
+2. Adding border in table
+
+
+Designing table in css
+======================
+CSS provides us several properties for styling html table like border patterns, mergin borders,
+highliting table text etc.
+
+Adding borders to the table
+---------------------------
+CSS provides us 5 properties for controlling table border and they are:
+    1.  border-style: decide the type of border applied to the table
+    2.  border-width: decide the thickness of broder.
+    3.  border-color: decides the color of the border.
+    4.  border individual side: decides border applied on individual sides.
+    5.  border: shorthand properties for above all.
+
+border-style:   following are type of border we can apply on border using css
+                none, dotted, dashed, solid, double, groove, ridge, inset, outset
+    Example:
+            <style>
+        table{
+            border-style: ridge;
+            width: 50%;
+        }
+        td,th{
+            border-style: groove;
+        }
+    </style>
+
+border-width: the width of the border can be decided using this property  and we have two 
+                ways to do this:
+                    a)using css keywords: thin, midium, thick they are absolute
+                    b)using direct values
+    Example:
+            border-width: thick;
+
+border-color: set the color of the border using 
+                    a)color name
+                    b)color hexcode
+                    c)rgb() function
+
+        Example:
+            border-color: blueviolet;
+
+Styling individual border: css allows us to style all four borders of the table in different ways
+                            using four properties:
+                                a)border-top-style
+                                b)border-bottom-style
+                                c)border-left-style
+                                d)border-right-style
+        Example:
+                 border-left: solid;
+            border-right: dotted;
+            border-top: double;
+            /* border-style: solid dotted double;  alternate way of border-left,right,top,bottom    */ 
+
+
+
+
+
+
+

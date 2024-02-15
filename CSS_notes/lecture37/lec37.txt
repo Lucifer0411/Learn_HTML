@@ -1,0 +1,139 @@
+OUTLINE                         Date: 28/07/2023
+=======
+1. padding property
+2. border property
+3. adding rounded borders
+4. margin property
+
+padding property:
+=================
+1.  The padding property allows us to maintain the gap between the elements inner text and border
+2.  Padding can be set in all four directions which are :
+            padding-top, padding-right, padding-bottom, padding-left.
+3.  However, we can use padding shorthand also to provide these values as shown below:
+    CSS code
+    --------
+        p.padding{
+            padding:25px 45px;
+        }
+    HTML code
+    --------
+        <p class="padding">This is a paragraph with specified padding.</p>
+
+---------------------------------------------------------------------------------------=-=-=-=-=-=-=-=-=
+    padding on inline as well as block elements 
+    css code
+    --------
+            h1,span{
+                    background-color:lightblue;
+                    padding:30px;
+            }
+    html code
+    ---------
+        <h1>I love web develpment</h1>
+            <br>
+        <div>
+            <span>I love programming tool</span>
+            <span>My interest is in data structure</span>
+        </div>
+
+border property:
+================
+1.  The border property is use to apply a border or a line surrounding the element.
+2.  border can be of 8 types and they are:
+        a)solid
+        b)dashed
+        c)dotted
+        d)double
+        e)inset
+        f)outset
+        g)groove
+        h)ridge
+3.  We have three properties and one shorthand for border:
+            a)border-style
+            b)border-width
+            c)border-color
+            d)border //shorthand
+    Example
+        css:
+            body{
+                background-color:blue;
+            }
+            *{
+                margin:0;
+                padding:0;
+                //This is called css reset and it cancels the default margin and padding which browser
+                automatically inside some elements
+            }
+            h1{
+                background-color:lightblue;
+                border:solid 2px red;
+                padding:30px
+            }
+        html:
+            <h1>I love Web development</h1>
+
+Adding rounded borders
+=======================
+CSS3 allows us to set rounded borders on elements and the property used is border-radius
+To do this we write the following css code:-
+    css:
+        .box{
+            width:300px;
+            height:150px;
+            background-color:pink;
+            border: 2px solid maroon;
+            border-radius:50px
+        }
+    html:
+        <div class="box"></div>
+
+Creating rounded borders
+========================
+    css:
+        .box{
+            width:300px;
+            height:300px;
+            background-color:pink;
+            border: 2px solid maroon;
+            border-radius:100%;
+        }
+    html:
+        <div class="box"></div>
+
+*   We can also have seprate border radius for all four borders using the properties :
+        border-top-left-radius:
+        border-top-right-radius:
+        border-bottom-left-radius:
+        border-bottom-right-radius:
+
+margin property:
+================
+1.  The margin property allows us to control the gap outside an html element.
+2.  Like padding margin also has four properties and one shortcut.
+        margin-top:
+        margin-right:
+        margin-bottom:
+        margin-left:
+        margin:
+    Example:
+        css:
+            #container{
+                width:300px;
+                border:1px solid #000;
+                background:#ccc;
+                padding:20px;
+                margin-top:150px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+        html:
+            <div id="container">
+                This is some text inside div element and is lengthy also.
+                </div>
+
+
+
+
+
+

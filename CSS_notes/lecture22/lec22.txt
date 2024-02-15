@@ -1,0 +1,59 @@
+OUTLINE                         Date=09/06/2023
+=======
+1.External CSS
+2.Inline CSS
+3.Selectors in css
+
+Types of CSS
+============
+
+When is internal css is used?
+============================
+a.  When we just have one HTML page.
+b.  When we have multiple pages but for every pages we want different styling.
+
+External CSS: -
+===============
+a.  External CSS is the most popular form of css and very commonly used by web developers
+b.  It is a two step process: -
+    1.  We create a seprate css file containing all the css code
+        p{
+            text-align:center;
+            font-weight:bold;
+            font-style:italic;
+            font-size:30px;
+            border:2px dashed green;
+            color:crimson;
+        }
+    2.  Assuming that we have saved this file by the name "mystyles.css" in a folder
+        at root called "cssfiles" we used <link> tag in HTML to connect html page with
+        it.
+        <link rel="stylesheet" type="text/css" href="/cssfiles/mystyles.css"/>
+        <body>
+            <p> hello world!</p>
+            <p> This paragraph is styled by css</p>
+            </body>
+c.  Most of the time it is recommended to use external style sheet only.
+
+Inline CSS
+===========
+In this we add css code directly inside the <html> tag using an attribute called style
+    <tag style="css code">...........</tag>
+    <p style="font-size:40px">This paragraph is style with css</p>
+
+1.  We should try to avoid inline css because it mixes HTML and CSS which makes it 
+    difficult for us to understand the code.
+2.  However, we can use it if the entire page for some element we want different styling
+
+Selectors in css
+
+CSS is all about applying styling on our webpage. But we need to identify on which html
+element the styling needs to be applyed. This identification is called selector. So 
+selectors are mechanism to pickup html element for styling.
+In css there are many ways of selectors but top four are:-
+    1.  Univeral Selectors
+    2.  Type selector or element selector
+    3.  Id selector
+    4.  class selector
+
+

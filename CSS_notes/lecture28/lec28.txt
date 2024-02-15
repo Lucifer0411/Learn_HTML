@@ -1,0 +1,92 @@
+OUTLINE                     Date:25/06/23
+=======
+1.handling fonts in css
+2.@import in css
+3.
+Handling fonts in css
+======================
+1.  Fonts are very important feature for making a website look friendly and beautiful
+2.  Although to a certain level font handling can be done using html but it is not at all recommended
+3.  The best way to deal with fonts is to use CSS.
+4.  CSS provides as 5 properties for font handling and they are:
+        a.  font-family: allow us to set name of the font default is times new roman
+        b.  font-style: allows us to choose wheater font will be normal or italics
+        c.  font-weight: allows us to set darkness that is boldness of the font
+        d.  font-size: allows us to set font size, both relative and absolute
+        e.  font-variant: a new property added in css and allows us to generate capital letters
+            in the size of small letters.
+
+Font Family:
+1.  The font-family property allows us to decide what font to be used on the page
+2.  There are three ways to set font-family and they are:-  
+        1.  exect font name
+            example: p{
+                font-family:arial;
+            }
+        2.  mentioning font group name
+            example: p{
+                font-family:sans-serif;
+            }
+        3.  Using fallback
+            example: p{
+                font-family:arial,verdana,sans-serif;
+            }
+
+What are font-familes/font groups
+=================================
+According to web development on the internet there are 5 categories of fonts :
+1.  Serif fonts: Serif is a french word and it means a font with decoration or strokes.
+    Examples are: time new roman, geogia etc
+2.  Sans-Serif font: In french sans no so a sans-serif font is font without any decorations 
+    Examples are: arial, verdana etc
+3.  Monospace fonts: These are fonts where every letter has same horizontal width
+    Examples are: consolas, courie, courie new etc
+4.  Cursive fonts: These are font which ressemble cursive hand writing
+    Examples are:comic sans ms, french script MT,etc
+5.  Fantasy fonts: These are fonts used for advertisements which make characters appear wider and darker
+    Examples are:stencil,impact, etc
+
+Web safe fonts
+===============
+1.  Web safe fonts are those which are commonly found on every popular operating system.
+2.  Examples are: time new roman,arial etc
+3.  So, as a development we must either 
+    a.  Choose a web safe font or
+    b.  Use a very popular font liberary called google fonts
+
+In css what is @import
+======================
+It is a css directive which informs the browser to download and connect a particular font liberary with
+our current css file 
+We generally use it for linking and associating liberary like google font or squirrel in our web page.
+@import is always used in .css file and not in .html file
+
+font-style
+==========
+1.  Allows us to set font as italic, normal, or oblique 
+2.  normal is regular form while oblique is a font which is produced by the browser by tilting normal
+    font towards right
+3.  Italic in itself is a font which ressemble cursive writing
+
+    In most of the browser oblique and italic will appear to be same so its prefered to go for italics
+    in case we want to emphasis some text.
+
+    Examples: 
+                p.normal{
+                    font-style:normal;
+                }
+                p.italic{
+                    font-style:italic;
+                }
+                p.oblique{
+                    font-style:oblique;
+                }
+                p. means select those paragraph whose class attribute is set to be given
+
+        <p class="normal">This is nomrmal font</p>
+        <p class="italic">This is italic font</p>
+        <p class="oblique">This is oblique font</p>
+
+
+
+

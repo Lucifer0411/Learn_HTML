@@ -1,0 +1,95 @@
+OUTLINE                                 Date: 19/06/2023
+=======
+1. ch
+2. ex
+3. Background in CSS
+4. background-color
+5. background-image
+
+"ch" unit
+=========
+The unit ch is generally used for setting width of input controls like textbox
+and it is always equal to current font's characters
+    For example:
+          css:  input{
+                width:10ch;
+                 }
+The above code will produce every input control to the 10 characters wide
+
+"ex" unit
+=========
+This unit represents size with respect to height of lower case 'x' of the current font
+so,         <style>
+                    input[type="text"]{
+                        widht:10ex;
+                    }
+            </style>
+Assuming that current font is times new roman and height of alphabet x to be 1.5px
+the above input control will be of 15px width.
+
+Styling background using css
+==============================
+1.  Background plays very important role in appearance of a website.
+2.  It helps us control color, image, position of background content of any 
+    html element. 
+3.  CSS overall provides 8 properties for background and  6 of them are very crucial
+    and they are: -
+    a.  background-color: The background-color property help us to set background color of the 
+        element and we have 4 ways to set it.
+        i.  Assigning color name
+        ii. Using rgb function
+        iii.Using hex value for color
+        iv. Using rgba function
+    
+        Example:
+            h1{
+                background-color:lightpink;
+            }
+            p{
+                background-color:rgb(255,255,0);
+            }
+            body{
+                background-color:#00aacc;
+            }
+    Setting background image
+    ------------------------
+    To apply background image we use the property background-image whose syntax
+    is:
+        background-image:url('path to image');
+    Example:
+        body{
+                background-image:url('../media/images/friends.jpg');
+
+            }
+    background-repeat:background-repeat property controls how image will be tiled
+    its possible values are:
+        a.  repeat; //default value
+        b.  no-repeat;  //no tiling 
+        c.  repeat-x;   //repeat horizontally
+        d.  repeat-y;   //repeat vertically
+        e.  inherit;    //inherit from parent
+    
+    Controlling background position
+
+    Bydefault image appear on top left of its container but we can change its location
+    by using background-position:-
+    its possible value are:-
+        a.  left top
+        b.  left bottom
+        c.  left center
+        d.  right top   
+        e.  right bottom
+        f.  right center
+        g.  center top
+        h.  center bottom
+        i.  center center
+             all the above are css keywords
+        j.  left%top%
+        k.  xpos ypos
+        l.  inherit
+
+
+
+
+
+

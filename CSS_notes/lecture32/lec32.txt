@@ -1,0 +1,18 @@
+OUTLINE             Date: 10/7/23
+========
+
+Styling list in css
+===================
+1.  css provides many properties for styling and formating list.
+2.  These properties are mostly common for both the list i.e. unordered and ordered.
+3.  Typically css allows us to control.
+    a)shape or appearance of the marker.
+    b)set the distance between marker and text.
+    c)specify an image instead of marker.
+
+4.  Following are important properties given by css for list.
+    a)list-style-type: controls the marker.
+    b)list-style-position: controls the distance between marker and text.
+    c)list-style-image: allows us to set an image instead of marker.
+    d)list-style: shorthand properties for all the above three.
+    

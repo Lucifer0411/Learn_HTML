@@ -1,0 +1,100 @@
+OUTLINE                         Date:07/07/23
+=======
+1. em vs unitless
+2. word-spacing
+3. Styling anchors
+
+em vs unitless in line-height
+=============================
+Although both em and unitless values calculate the height of the line on the basis of font-size
+but there is a subtle difference between them 
+1.  If em is used with line-height then the calculations are done on the basis of parent element font-size
+2.  On the other if unitless values are used then line-height is calculated on the current elements font-size
+    Example:
+            <style>
+        div{
+            width: 300px;
+            font-size:15px;
+        }
+        .one{
+            line-height: 1.1em;
+        }
+        .two{
+            line-height: 2;
+        }
+        h1{
+            font-size: 30px;
+        }
+    </style>
+
+    <body>
+         <div class="one">
+        <h1>em line-height lorem</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Veritatis sint eos natus reprehenderit facilis in, praesentium velit voluptates.
+         Beatae voluptatem a magni cum sunt harum, alias impedit dolor facilis ipsa?
+    </div>
+    <hr>
+    <div class="two">
+        <h1>Unitless line-height</h1>
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum illum
+         est necessitatibus expedita dolor minus ad, blanditiis 
+        odit voluptatum dicta accusamus nemo distinctio incidunt quisquam. Nostrum deserunt non dolor dicta.
+    </div>
+    </body>
+
+word-spacing:
+1.  The word-spacing property is used to handle space between two adjacent words.
+2.  Like other properties this also has values in px, or em and it can also be negative.
+    Example:
+         .three{
+            word-spacing: 30px;
+        }
+
+    <div class="three">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi voluptates necessitatibus dolore, libero accusamus placeat, consequuntur illum, doloremque 
+        alias vitae adipisci eligendi? Adipisci pariatur architecto nemo. Nulla ipsa deserunt distinctio.
+    </div>
+
+Styling anchors
+=================
+1.  By default if we apply a rule set on <a> tag css will be applied on every state of anchor tag
+2.  For example consider the following css code 
+    a{
+        color:red;
+    }
+3.  The above rule set will apply on every anchor present in the page whatever be the state: visited, unvisited, active, hover.
+4.  However css allow us to style every state of anchor differently using a concept called psedo classes
+
+What is a psedo class
+=====================
+1.  Psedo classes are special keywords provided by css which when used with tags allow us to apply css rule set
+    on an elements specific states 
+2.  We have different psedo classes for different html elements and for anchor we have four of them:
+        a:visited -Applied of visited links
+        a:hover  -Mouse hover on a link
+        a:link  -Applied for unvisited  link
+        a:active - Applied for active links
+
+        Example:
+
+         a{
+        color:gray;
+        text-decoration: none;
+        font-weight: bold;
+     }
+     a:visited{
+        color:red;
+     }
+     a:hover{
+        color:blue;
+        font-style: italic;
+        font-size: 120%;
+        text-decoration: underline;
+     }
+
+    <a href="www.facebook.com">Facebook</a>
+
+
+

@@ -1,0 +1,147 @@
+OUTLINE                     Date: 11/06/2023
+=======
+1. Universal Selector
+2. Type selector
+3. Id selector
+4. Class selector
+
+Universal Selector
+==================
+1.  The univeral selector is used to apply styling to every element present on the
+    page that is <p>, <a>, <table> etc
+2.  The general syntax of applying a universal selector is:-
+        *{
+            //CSS properties
+        }
+        where * indicates universal selector
+    example: *{
+            font-family:Ariel;
+            font-size:20px;
+            font-weight:normal;
+            }
+Type Selector
+=============
+1.  Type selector is applyed on HTML elements based upon their names
+2.  It is also called element selector and its general syntax is: -
+        tag{
+            .....
+            .....
+        }
+        where tag is the name of html element without angular braces
+    example:  
+      body{
+                font-style: italic;
+                }
+    example:  
+        *{
+            color: red;
+        }
+        p{
+            font-weight: bold;
+        }
+        h1{
+            color: green;
+            border: dashed blue 2px;
+        }
+
+ID Selector
+===========
+1.  The ID selector is used to uniquely identify an html element.
+2.  We generally use id when we want to apply some rule set on just one element.
+    general syntax:
+        css:    #somename{
+                            .......
+                        }
+        html:   <tag id="somename">
+                ......
+                </tag>
+                where # is symbol to indicate id
+    example:
+            p{
+                font-weight: bold;
+                font-size: 20px;
+                color:blue;
+            }
+            #intro{
+                font-style: italic;
+                color: red;
+                font-weight: normal;
+            }     
+
+        <p id="intro">This is a italic</p>
+        <p>This text is not italic</p>
+--Id's must be unique no two html elements should have same id.
+    If we keep id same for two elements then css will work perfectly but js and react will 
+    face problems.
+
+Class Selector
+==============
+1.  Class selector is used when we want to apply some common rule set on more than one
+    element but not on every element.
+2   To create a class selector.
+        syntax:   
+        CSS:    .somename{
+                        ........
+                    }
+
+        html:   <tag class="somename">
+                    .........   
+                </tag>
+            where . indicate class selector
+    example:    
+            .highlight{
+                    font-weight: bold;
+                    color: red;
+            }
+            h1{
+                color:#fff00;
+            }
+            <h1>Good Morining</h1>
+            <p> This is normal text in black color</p>
+            <p class="highlight"> But this is red and black</p>
+            <a class="highlight" href="http://www.yahoo.com">
+            Link to yahoo in red and black</a>
+    
+   
+Applying more than one class on same element:-
+==============================================
+We are allowed to add multiple classes on same html element but to do this we 
+need to provide spaces between class names
+If the two classes applied will have common properties than the class created later
+will replace the previous one.
+For example in the code shown below the text color of para will be blueviolet and not red
+ example:
+          .highlight{
+                    font-weight: bold;
+                    color: red;
+            }
+            h1{
+                color:#fff00;
+            }
+            .thicky{
+                border: 2px green dotted;
+                color: blueviolet;
+            }
+            <h1>Good Morining</h1>
+            <p> This is normal text in black color</p>
+            <p class="highlight thicky"> But this is red and black</p>
+            <a class="highlight" href="http://www.yahoo.com">
+            Link to yahoo in red and black</a>
+
+Id vs class
+============
+         id                                                class
+----------------------------------------------------------------------------------------         
+1.Used for identifying one           |  1.Used for creating group of elements which
+element uniquely                     |       will be applied common styling
+                                     |   
+2.Id's in the entire page must be    |  2.Multiple elements can have same class
+unique.                              |
+                                     |     
+3.One element can be allocate one id |  3.One class can be allocate to multiple element
+and one id can be allocate to one id |   and element can also have multiple classes.
+                                     |
+4.Has greater specificity than class |  4.Has lower specificity than id
+----------------------------------------------------------------------------------------
+
+

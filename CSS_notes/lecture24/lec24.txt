@@ -1,0 +1,109 @@
+OUTLINE                     Date:-12/06/2023
+=======
+1. Inheritance in css
+2. inherit keyword
+3. css units.
+4. categories of units in css
+
+Inheritance in CSS
+==================
+Like any object oriented language, css follows the concept of inheritance.
+In simple words it means that we are having a parent element and child element.
+For example consider the following html code: -
+    <div>
+        <p>
+            ......
+            <a>........</a>
+        </p>
+    </div>
+For browser this html code will get converted into an inheritance tree as shown below: -
+                    <div>
+                     /
+                   <p>
+                   /
+                  <a>
+    In the above code <div> is parent of <p> and <p> is parent of <a>
+    so, if we apply a css property like color on <div> it will 
+    also effect color of <p> and <a>
+    and this is inheritance.
+
+Css:     <style>
+            h1{
+             color:red;             //inherit
+             font-size:20px;        //inherit
+             border: solid 20px blue;       //not inherit
+             }
+        </style>
+    html:   <body>
+                <h1> This is a <em> test </em> </h1>
+            </body>
+
+The "inherit" keyword
+======================
+CSS provides as a keyword called inherit which forces the browser to inherit parent
+parent properties into child element for example the code shown below will add border with
+same effect on <em> as on <h1>
+    css:    <style>
+        h1{
+            color:red;
+            font-size: 20px;
+            border:2px solid blue;
+        }
+        em{
+            border: inherit;
+        }
+    </style>
+    //background-color is a transparent initially
+
+
+CSS Units
+=========
+Just like in real world we have methamatical units like km, gram etc similarly in css
+also measure the elements
+A css unit decide how large or small an element will appear.
+    example :   
+        p{
+            margin:20px ;
+        }
+        //p: selector
+        //margin: property
+        //20: value
+        //px: unit
+
+Types of units in css
+=====================
+Css provide two categories of units: -
+1.  absolute
+2.  relative
+
+Absolute: -Absolute units are those which do not change even if browser settings or
+            view port(device) changes.
+            Example of absolute units are:-
+    px, pt, pc, cm, mm, in 
+    Example: -
+    css:    <style>
+                    p{
+                        font-size:20pt;
+                    }
+            </style>
+
+    html:       <body>
+                        <span>hello</span>
+                        <p>
+                            welcome user <br>
+                            <a href="www.facebook.com" >visit facebook</a>
+                        </p>
+                </body>
+
+According to the above ruleset font size of para and anchor will remain fixed at 20pt
+So, even if default settings of the browser are change still para and anchor will appear
+in 20pt.
+
+
+
+
+
+
+
+
+    

@@ -1,0 +1,100 @@
+OUTLINE                 DATA: 24/07/2023
+=======
+1. Semantic tags in html
+2. sematic tag use
+3. popular alternates of div
+4. Box model
+
+Semantic tags in html
+=====================
+1.  The word semantic elements in html indicates those tags whose names are meaningful.
+2.  We already know some semantic tags like : <h1>, <img>, <thead>, <tbody>, <tfoot>, <table>.
+3.  However, html5 has provided some more meaningful tags which are alternates to <div> but they have more 
+    meaningful names.
+
+Why to use semantic tags when we already have <div> ?
+=======================================================
+1.  If a page uses semantic tags it becomes more readable.
+2.  Semantic tags are SEO friendly as well as can be easily understood by screen readers.
+3.  They make our css and html code look consistent 
+
+Popular alternates of <div>
+=============================
+    <header>
+    <nav>
+    <main>
+    <article>
+    <section>
+    <aside>
+    <footer>
+
+1.  <header>: Defines the banner of the website. That is introductory information.
+2.  <nav>: Use to generate navigation menu.
+3.  <main>: Contains the actual content of the website. One webpage should have one <main> tag.
+4.  <article> and <section>: <article> tags contains self discriptive content and can be further divided into 
+        multiple <section>. However the above rule can be reverse also. That is a <section> can also contains
+        <article>.
+5.  <aside>: Contents less relevant information like side bar.
+6.  <footer>: Contains footer information like copyright or website development information etc.
+
+    Previour webpage using html5 standards
+    ======================================
+
+     <style>
+       
+       
+        article{
+            background-color: lightblue;
+        }
+        header{
+            text-align: center;
+            background-color: darkblue;
+            color:white;
+            padding:30px;
+        }
+        header span{
+            color:crimson;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span>S</span>HARMA <SPAN>C</SPAN>OMPUTER <SPAN>A</SPAN>CADEMY  </h1>
+    </header>
+    <main>
+        <article>
+            <section>
+                    <h2>
+                        Welcome to sharma computer academy
+                    </h2>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, eveniet? 
+                    Provident vel sunt quos, aliquid dolore distinctio expedita quaerat
+                     doloremque, error neque odit qui dolores doloribus! Explicabo nostrum dicta natus!
+                </p>
+            </section>
+        </article>
+    </main>
+    
+</body>
+
+Box model
+=========
+Every element displayed on the webpage is comprissed of rectangular boxes. The box model in css describes
+    how these boxes will be laid down box model mainly deals with core element are:
+    1. content: It can be text, image anything that we want to add in the webpage.
+    2. padding: This is the inner space betweeen content and the border.
+    3. border: This is the frame which is bydefault invisible and covers rectangular portion around an element.
+    4. margin: This is the outer space between frame and next item.
+
+Width and height
+================
+Although they are not part of box model but, they are very important for setting width and height of content
+inside an element 
+Another point is to notice that width and height do not include padding, border and margin.
+        
+
+
+
+

@@ -1,0 +1,74 @@
+OUTLINE                     Date:21/07/2023
+========
+1. Creating Zebra strips
+2. Divs and Spans
+
+Creating Zebra strips
+======================
+1.  Zibra strips means applying background color to alternate rows
+2.  This can be done easily by applying css pseudo class called :nthchild()
+3.  We can pass 3 types of value to nth child and they can be 
+        a)CSS keywords like: even or odd
+        b)An integer indicating exect row number(row number in css begins from 1)
+        c)Using the expression "An + B"
+            where A and B are integers and n is a count which begins from 0
+    Example 1:
+            tr:nth-child(odd){
+                background-color:darkgray;
+            }
+     Sets the background color of every odd number row to dark gray
+
+    Example 2:
+            tr:nth-child(even){
+                background-color:darkgray;
+            }
+     Sets the background color of every even number row to dark gray
+
+    Example 3:
+            tr:nth-child(1){
+                background-color:darkgray;
+            }
+            tr:nth-child(4){
+                background-color:lightgray;
+            }
+    Set the background color of row number 1 darkgray and row number 4 to lightgray
+
+    Example 4:
+            tr:nth-child(2n+3){
+                background-color:darkgray;
+            }
+    Sets the background color of every odd numbered row starting from three to darkgray
+
+    Example 5:
+            tr:nth-child(2n+2){
+                background-color:darkgray;
+            }
+            Sets the background color of every even number of row to darkgray
+
+Divs and Span
+=============
+Div
+---
+1.  Div stand for division and we use it for dividing our webpage into multiple sections
+2.  Div is most popularly used when we want to group multiple elements and treat them as a single black
+3.  Divs are same as para but most important difference is that a div can contain any kind of data like 
+    text, images, table, links, heading etc while a para can only contain textual data
+4.  Divs in modern web development have replaced table for layouting purpose and then load faster compare
+    to tables. Also we can customize the div using css
+    Syntax:
+            <div>
+                ...content....
+            </div>
+Span
+----
+1.  A span is also a container tag like div but generally used for wrapping smaller sections of the webpage
+2.  Another point which differce a span from div is that div is a block level element while span is
+    a inline element
+    syntax:
+            <span>
+                    ....content....
+            </span>
+
+
+
+

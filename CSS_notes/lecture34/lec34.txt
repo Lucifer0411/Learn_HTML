@@ -1,0 +1,140 @@
+OUTLINE                     DATE: 17/07/2023
+========
+1. border shorthand
+2. collapse border
+3. Setting width and height of the table
+4. Increasing gap around borders
+5. Aligning text in the table
+6. Adding colors in the table
+7. Using hover pseudo class with table
+8. Controlling table caption using css
+9. Decorating empty cells
+
+
+border shorthand
+================
+1. All the three border properties discussed above can be set using border shorthand and the syntax will be
+    border:style width color;
+2. We can give this properties in any order but style is important.
+            border: solid 2px green;
+
+Collapsing borders
+====================
+1.  By default when we add borders to table as well as th and td then we get double borders because each cell
+has its own border
+2.  To controll this behaviour we use a properties called "border-collapse"
+3.  This property has two possible values:
+        a)seprate (this is a default value and forces every cell to have a seprate border)
+        b)collapse (merges adjacent borders)
+
+                border-collapse: collapse;
+        
+Setting width and height of the table
+=====================================
+1.  Bydefault a table renders just wide and tall as per its contents
+2.  However, we can change this behaviour using width and height properties as shown below
+        table{
+                border-collpase:collapse;
+                width:100%;
+                height:300px;
+        }
+        table,th,td{
+            border:1px solid black;
+        }
+
+Increasing gap around borders
+=============================
+1.  Bydefault the cell of a table is large enough to contain its data.
+2.  However, we can increase space inside the border and the text using padding property.
+
+             table{
+                border-collpase:collapse;
+                 }
+            table,th,td{
+            border:1px solid black;
+                 }
+             th,td{
+            padding:15px;
+                 }
+
+Aligning text in the table
+==========================
+1.  CSS allows us to control alignment of the content of the table either horizontally or vertically
+2.  The properties used for it are : text-align and vertical-align
+                Possible value for text-align are: left , right , center
+                Possible value for vertical-align are: top, middle, bottom
+
+                Example:
+                    th,td{
+                        text-align:right;
+                        vertical-align:bottom;
+                    }
+
+Adding colors in the table
+==========================
+1.  We can add three types of color to the table using following three properties.
+    a)border-color:
+    b)background-color:
+    c)color:
+2.  Color can be supply either using color name, or color hexvalue or using rgb() function or using rgba() function
+            table{
+                background-color:darkkhaki;
+                color:darkblue;
+                border-collapse:collapse;
+            }
+            table,th,td{
+                border:1px solid black;
+            }
+
+Using hover pseudo class with table
+===================================
+1.  To change the appearance of a row or column when the pointer hovers over it we can use
+    the pseudo class hover.
+    syntax:-
+            tr:hover{
+                    //properties.
+            }
+            td:hover{
+                  //properties;
+            }
+            Example:
+                    table{
+                        background-color:bisque;
+                    }
+                    tr:hover{
+                        background-color:skyblue;
+                    }
+                    th:hover{
+                        background-color:darkorange;
+                    }
+                    td:hover#t1{
+                        background-color:fuchsia;
+                    }
+
+Controlling table caption using css
+===================================
+1.  caption is the title of the table given using <caption> tag.
+2.  Bydefault a caption appears at the top of the table 
+3.  However css allow us to change its position and appearance
+4.  The appearance is controlled using regular css properties like: color, font-weight, font-size etc
+    but for position the property is caption-side whose possible values are top and bottom
+
+            caption{
+                caption-side:bottom;
+                font-size:1.2em;
+                font-weight:bold;
+                text-align:left;
+            }
+
+Decorating empty cells
+======================
+1.  Bydefault even empty-cells are render with border 
+2.  However, in some cases we may want to hide the empty cells and only display cells which has data
+3.  This can be achieved using the property empty-cells which has two possible values: show(default) and hide
+            Example:
+                    table.t1{
+                        empty-cells:show;
+                    }
+                    table.t2{
+                        empty-cells:hide;
+                    }

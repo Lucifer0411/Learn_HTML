@@ -1,0 +1,78 @@
+OUTLINE                             Date:03/07/2023
+=======
+1. Handling text in css
+
+Handling text in css
+====================
+In CSS we have several properties to deal with text content like color, alignment, decoration
+etc the most common text properties are: 
+    1. color
+    2. text-align
+    3. text-decoration
+    4. text-transform
+    5. text-indent
+    6. line-height
+    7. letter-spacing
+    8. word-spacing
+
+color: Allows us to set color of the text.Possible ways are: 
+        a. using color name
+        b. using color hex value
+        c. using css function rgb() or rgba()
+    Example:
+      h1{
+            color:blue;
+        }
+        p{
+            color:rgba(10,10,10,0.3);
+        }
+
+        <body>
+            <h1>This is heading</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Nulla esse quaerat repellat tempore cum numquam eos dolores 
+            eaque rem ad illo enim, quasi id suscipit facilis placeat culpa. Enim, magni.
+            </p>
+        </body>
+
+text-align: 1.set the alignment of the text
+            2.There are four possible values for text-align and they are:
+                left, right, center and justify
+    what is justify?
+    The value justify makes our text appear like newspaper text that is it leaves equal margin
+    on left and right of each row.
+
+    Example:
+        .text_justify{
+            width:300px;
+            text-align: justify;
+            background-color: azure;
+            color:black;
+            border: solid rebeccapurple;
+        }
+
+    <p class="text_justify">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae suscipit aliquam error quam vero. Dolorem facilis doloribus 
+        ea vero consequuntur libero quia sit ratione minima obcaecati, ipsum non aut soluta.
+    </p>
+
+text-indent:
+1.  This property set the indentation of 1st line of text.
+2.  This is done by inserting a blank space before the 1st word.
+3.  Possible value can be in %, px or em.
+
+text-transform:
+1.  This property allows us to set cases for the text.
+2.  Possible values are uppercase, lowercase, capitalize.
+
+line-height:
+1.  This property allows us to control vertical b/w two lines
+2.  By default this gap is 1.2
+3.  Its possible value are: %, px, em or unit less number.
+
+
+
+            
+
+
+
